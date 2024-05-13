@@ -6,8 +6,7 @@ Bashmap is a simple bash script designed to use nmap to quickly scan for open po
 
 Before you begin, ensure you have met the following requirements:
 
-* You have a `Linux` machine. It may work on other OS, but it was tested on `Linux`.
-* You have installed the required packages. (List the required packages here)
+* Tested in Kali Linux. If running in another OS you must have NMAP installed.
 
 ## Installing Bashmap
 
