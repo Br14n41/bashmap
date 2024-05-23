@@ -12,7 +12,7 @@ do
     echo "Scanning IP: $ip"
 
     # Run nmap to scan for open ports
-    ports=$(nmap -p- -T4 $ip | grep ^[0-9] | cut -d ' ' -f 1 | tr -d '/tcp')
+    ports=$(nmap -p- -T4 $ip | grep ^[0-9] | cut -d ' ' -f 1 | tr -d '/tcp' | paste -sd ',')
 
     # If ports were found, run service scan
     if [ -n "$ports" ]; then
