@@ -1,4 +1,3 @@
-#!/bin/bash
 # Script to simplify nmap scanning
 
 # Check if filename is provided
@@ -13,15 +12,18 @@ do
     echo "Scanning IP: $ip"
 
     # Run nmap to scan for open ports
-    ports=$(nmap -p- -T4 $ip | grep ^[0-9] | cut -d ' ' -f 1 | tr '\n' ',' | sed s/,$//)
+    ports=$(nmap -p- -T4 $ip | grep ^[0-9] | cut -d ' ' -f 1 | tr -d '/tcp')
 
     # If ports were found, run service scan
     if [ -n "$ports" ]; then
         echo "Open ports: $ports"
         echo "Running service scan..."
-        nmap -A -p$ports $ip
+        nmap -A -p$ports $ip -oX $ip.xml
     else
         echo "No open ports found."
     fi
+
+# Convert XML to HTML
+xsltproc $ip.xml -o $ip.html
 
 done < "$1"
