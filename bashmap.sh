@@ -1,8 +1,6 @@
 #!/bin/bash
 # Script to simplify nmap scanning
 
-
-
 # Check if filename is provided
 if [ "$#" -ne 1 ]; then
     echo "Usage: $0 <ip_file.txt>"
