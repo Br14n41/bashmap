@@ -1,6 +1,6 @@
 # Bashmap
 
-Bashmap is a simple bash script designed to use nmap to quickly scan for open ports, then run Nmap with the -A flag to enumerate OS, services, and versions. Created to simplify scanning a small list of IPs for the OSCP exam.
+A simple bash script designed to use nmap to quickly scan for open ports, then run Nmap with the -A flag to enumerate OS, services, and versions. Created to simplify scanning a small list of IPs for the OSCP exam and in my work as a penetration tester.
 
 ## Prerequisites
 
