@@ -13,7 +13,7 @@ Before you begin, ensure you have met the following requirements:
 To install Bashmap, follow these steps:
 
 ```bash
-git clone https://github.com/username/bashmap.git
+git clone https://github.com/Br14n41/bashmap.git
 cd bashmap
 chmod +x bashmap.sh
 ```
