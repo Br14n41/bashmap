@@ -4,9 +4,7 @@ A simple bash script designed to use nmap to quickly scan for open ports, then r
 
 ## Prerequisites
 
-Before you begin, ensure you have met the following requirements:
-
-* Tested in Kali Linux. If running in another OS you must have NMAP installed.
+Tested in Kali Linux. If running in another OS you must have NMAP installed.
 
 ## Installing Bashmap
 
@@ -20,5 +18,5 @@ chmod +x bashmap.sh
 
 ## Using Bashmap
 ```bash
-./bashmap.sh list-of-ips.txt
+./bashmap.sh hosts-file
 ```
