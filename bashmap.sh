@@ -18,7 +18,7 @@ do
     if [ -n "$ports" ]; then
         echo "Open ports: $ports"
         echo "Running service scan..."
-        nmap -sS -A -p$ports $ip --stats 10s -oA full_scan
+        nmap -Pn -sS -A -p$ports $ip --stats 10s -oA full_scan
     else
         echo "No open ports found."
     fi
